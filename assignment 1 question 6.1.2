@@ -14,7 +14,7 @@
 \usepackage{cite}
 \usepackage{cases}
 \usepackage{subfig}
-
+\usepackage{hyperref} 
 \usepackage{longtable}
 \usepackage{multirow}
 
@@ -133,50 +133,55 @@ columns=fullflexible
 %
 Download latex codes from 
 %
-\begin{lstlisting}
-https://github.com/96143/Assignment-1/blob/main/assignment%201%20question%206.1.2
+\justify
+\pagenumbering{arabic}
+
+\href{https://github.com/96143/Assignment-1/blob/main/assignment}{click here to open the link}
 \end{lstlisting}
 \section{Problem}
 (6.1.2) If\\
- F$_{v}(x) =
-  \begin{cases}
-                                   1-e^{\ -ax} & x\geq0 \\
+\begin{center}
+\begin{equation}
+ F_{v}(x) =
+\begin{cases}
+    1-e^{\ -ax} & x\geq0 \\
                                    
-                                   0 & x<0 \\
-
-  \end{cases} \\
-    
-find a
+    0 & x<0 \\
+  \end{cases}
+\end{equation}
+\end{center}
+ Find a
 \section{Solution}
-F$_{v}(x) =
+\begin{equation}
+F_{v}(x) =
   \begin{cases}
                                    1-e^{\ -ax} & x\geq0 \\
                                    
                                    0 & x<0 \\
 
   \end{cases}\\
-  
-We get:
+\end{equation} 
+We get:\\
+\begin{equation}
 F_{v}(x) = 
   \begin{cases}
                                    e^{\ -ax} & x\geq0 \\
                                    0 & x<0 \\
 
-  \end{cases}
-
-
-\[ \int_{0}^{\infty} e^{\ -ax} =1 
-\]
-
+  \end{cases}\\
+\end{equation}
+\begin{equation}
+\int_{0}^{\infty} e^{\ -ax} =1 
+\end{equation}
+\begin{equation}
  \left (\  
 \frac{e^{\ -ax}}{-a}  \right )_{0}^{\infty} = 1
+\end{equation}
 
-\begin{equation*}
+\begin{equation}
       0 + \frac{1}{a}      = 1
- \end{equation*}
-     
-      
-     
-  a = 1
-
+\end{equation}
+\begin{equation}
+ a = 1
+\end{equation}
 \end{document}
